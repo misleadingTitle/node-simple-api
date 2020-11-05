@@ -2,7 +2,7 @@ const http = require('http');
 
 const server = http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'application/json' });
-    res.end('{message:"Hello world"}');
+    res.end('{message:"Hello worlda", timestamp:"' + new Date() + '"}');
 });
 
 server.listen(3000);
